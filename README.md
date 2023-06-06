@@ -4,6 +4,7 @@
 ## Check if the year is leap:
 
 ```python
+# User input
 year = int(input("Enter a year, please: "))
 
 if year % 4 == 0:
@@ -23,12 +24,13 @@ else:
 ## BMI calculator:
 
 ```python
-height = float(input("enter your height in m: "))
-weight = float(input("enter your weight in kg: "))
+# User input
+height = float(input("Please, enter your height (in m): "))
+weight = float(input("Please, enter your weight (in kg): "))
 
 bmi = round(weight / height ** 2)
 
-print("Your BMI is approximatelly: " + str(int(bmi)))
+print("BMI is approximatelly: " + str(int(bmi)))
 print(type(bmi))
 
 if bmi < 18.5:
